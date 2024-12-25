@@ -1,5 +1,5 @@
 {
-    "name": "rabbitmq-rpc",
+    "name": "@kd3n1z/rabbitmq-rpc",
     "version": "1.0.0",
     "description": "Amqplib RPC wrapper",
     "main": "./dist/index.js",
