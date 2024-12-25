@@ -1,0 +1,41 @@
+{
+    "name": "rabbitmq-rpc",
+    "version": "1.0.0",
+    "description": "Amqplib RPC wrapper",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "tsup",
+        "buildAndPublish": "npm run clean && npm run build && npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kd3n1z/rabbitmq-rpc.git"
+    },
+    "keywords": [
+        "rpc",
+        "rabbitmq",
+        "ampq",
+        "ampqlib"
+    ],
+    "author": "Denis Komarkov",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kd3n1z/rabbitmq-rpc/issues"
+    },
+    "homepage": "https://github.com/kd3n1z/rabbitmq-rpc#readme",
+    "devDependencies": {
+        "@types/amqplib": "^0.10.6",
+        "@types/node": "^22.10.2",
+        "tsup": "^8.3.5",
+        "typescript": "^5.7.2"
+    },
+    "dependencies": {
+        "amqplib": "^0.10.5"
+    }
+}
