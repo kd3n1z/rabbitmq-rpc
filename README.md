@@ -18,7 +18,10 @@ function fibonacci(n) {
 }
 
 async function main() {
-    const rpcServer = await createRPCServer('localhost:5672', 'rpc_queue', { logMessages: true, logErrors: true });
+    const rpcServer = await createRPCServer('localhost:5672', 'rpc_queue', {
+        logMessages: true,
+        logErrors: true,
+    });
 
     rpcServer.setHandler('fibonacci', fibonacci);
 
@@ -34,7 +37,10 @@ Here's an example of how to use the RPC Client:
 import { createRPCClient } from './rabbitmq-rpc';
 
 async function main() {
-    const rpcClient = await createRPCClient('localhost:5672', 'rpc_queue', { logMessages: true, logErrors: true });
+    const rpcClient = await createRPCClient('localhost:5672', 'rpc_queue', {
+        logMessages: true,
+        logErrors: true,
+    });
 
     console.log(await rpcClient.call('fibonacci', 100));
 
