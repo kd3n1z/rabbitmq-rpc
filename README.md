@@ -7,7 +7,7 @@ Amqplib RPC wrapper.
 Here's an example of how to use the RPC Server:
 
 ```js
-import { createRPCServer } from './rabbitmq-rpc';
+import { createRPCServer } from '@kd3n1z/rabbitmq-rpc';
 
 function fibonacci(n) {
     if (n == 0 || n == 1) {
@@ -34,7 +34,7 @@ main();
 Here's an example of how to use the RPC Client:
 
 ```js
-import { createRPCClient } from './rabbitmq-rpc';
+import { createRPCClient } from '@kd3n1z/rabbitmq-rpc';
 
 async function main() {
     const rpcClient = await createRPCClient('localhost:5672', 'rpc_queue', {
